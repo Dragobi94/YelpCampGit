@@ -52,7 +52,9 @@ app.use(mongoSanitize({
 const store = MongoStore.create({
     mongoUrl: dbUrl,
     touchAfter: 24 * 60 * 60,
-    crypto: secret
+    crypto: {
+        secret,
+    }
 });
 
 store.on("error", function (e) {
