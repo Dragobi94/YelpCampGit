@@ -8,7 +8,7 @@ const dbUrl = process.env.DB_URL
 
 mongoose.set('strictQuery', true);
 mongoose.connect(dbUrl);
-//mongoose.connect('mongodb+srv://cosentinojacopo:rKyhU8Cvon0NAKjq@cluster0.slnv8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+//mongoose.connect('mongodb+srv://jacopoc:ciao@cluster0.slnv8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 //mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp')
 
 const db = mongoose.connection;
